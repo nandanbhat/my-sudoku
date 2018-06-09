@@ -1,0 +1,10 @@
+  <div class="app-sudoku-container">
+    <app-timer></app-timer>
+  <div class="buttons">
+    <div class="right-buttons">
+      <app-btn [click]="_reset" [disabled]="!game.modified()" type="secondary" title="Undo"></app-btn>
+      <app-btn [click]="_old"  type="primary" title="Redo"></app-btn>
+    </div>
+  </div>
+  <app-sudoku-board [game]="game"></app-sudoku-board>
+</div>
